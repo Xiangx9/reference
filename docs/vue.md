@@ -510,6 +510,14 @@ watch(count, function() {
 ```
 <!--rehype:className=wrap-text-->
 
+### 深度监听状态
+```
+watch(count, (newVal, oldVal) => {
+  //newVal 新值  oldVal 旧值
+  console.log('watch', newVal, oldVal);
+}, { deep: true }) // deep: true 深度监听
+```
+  
 ### 计算状态
 <!--rehype:wrap-class=col-span-2-->
 
